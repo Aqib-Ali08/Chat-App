@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import viteLogo from "../../../public/vite.svg";
 import reactLogo from "../../assets/react.svg";
 import "./leftbar.css";
 import NameCard from "./nameCard";
+import {isTrue} from './nameCard'
+// import { counterContext } from "../../context/context";
 
 const leftbar = () => {
+  const [isTrueState, setIsTrueState] = useState(isTrue);
+
+  useEffect(() => {
+    setIsTrueState(isTrue);
+    console.log("isTrueState is", isTrueState)
+  }, [isTrue]);
+    
   return (
+    <div className="leftbar" style={{ display: isTrue ? 'none' : 'flex' }}>
       <div className="left">
         <div className="logo">
         <h2>Chat-APP</h2>
@@ -37,6 +47,11 @@ const leftbar = () => {
         <section className="contacts">
           <NameCard />
         </section>
+        
+      </div>
+      <div className="bg-text">
+      <h1>Chat-APP</h1>
+    </div>
       </div>
   );
 };

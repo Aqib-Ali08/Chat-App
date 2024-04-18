@@ -4,6 +4,7 @@
     width: 22%;
     border-radius: 5px;
     padding: 10px;
+    display: none;
 }
 
 .profile img{

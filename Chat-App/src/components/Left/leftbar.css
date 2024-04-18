@@ -61,3 +61,14 @@
     scrollbar-color: #000000 transparent;
     scrollbar-width: thin;
   }
+
+  .leftbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+  }
+
+  .bg-text{
+    font-size: 100px;
+  }

@@ -14,10 +14,10 @@ app.get('/:hero',(req,res)=>{
   res.send(`${req.params.hero}'s page`);
 })
 
-// app.get('/', (req, res) => {
-//     const absoluteFilePath = path.join('C:', 'Users', 'User', 'Documents', 'GitHub', 'CHAT-APP', 'Chat-App', 'dist', 'index.html');
-//     res.sendFile(absoluteFilePath)
-// })
+app.get('/', (req, res) => {
+    const absoluteFilePath = path.join('C:', 'Users', 'User', 'Documents', 'GitHub', 'CHAT-APP', 'Chat-App', 'dist', 'index.html');
+    res.sendFile(absoluteFilePath)
+})
 
 
 app.listen(port, () => {

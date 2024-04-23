@@ -1,5 +1,5 @@
 {
-  "name": "chat-app",
+  "name": "app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,7 +12,12 @@
   "dependencies": {
     "express": "^4.19.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^6.22.3",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5",
+    "typed.js": "^2.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

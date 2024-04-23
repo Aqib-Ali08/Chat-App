@@ -78,8 +78,8 @@
 }
 
 .mainmediabox{
-    overflow-x: auto;
-    height: 403px;
+    overflow-y: scroll;
+    height: 350px;
 }
 
 .mainmediabox::-webkit-scrollbar{

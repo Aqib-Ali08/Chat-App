@@ -1,19 +1,18 @@
 import './nameCard.css'
-import React, { useState } from 'react';
-// import React from 'react'
-// import { counterContext } from '../../context/context.js';
+import React from 'react';
+
 
 const nameCard = () => {
-  const [isTrue, setIsTrue] = useState(false);
 
   const handleClick = () => {
-    setIsTrue(true)
-    // console.log("istrue is updated to" ,isTrue)
+    document.querySelector('.bg-text').style.display = 'none'
+    document.querySelector('.leftbar').style.display = 'contents'
+    document.querySelector('.mainmid').style.display = 'flow'
+    document.querySelector('.right').style.display = 'flow'
   }
 
   return (
     <div >
-      {/* <counterContext.Provider value={isTrue}> */}
       <div className="NameCard" onClick={handleClick}>
         <div className="pic">
           <img src="https://www.shareicon.net/data/512x512/2016/09/15/829459_man_512x512.png" alt="" />
@@ -26,10 +25,8 @@ const nameCard = () => {
           <div className="time">14m</div>
         </div>
       </div>
-      {/* </counterContext.Provider> */}
     </div>
   )
 }
 
 export default nameCard
-export const isTrue = false;

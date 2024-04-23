@@ -3,7 +3,14 @@
     align-items: center;
     gap: 10px;
     justify-content: center;
-  }
+    transition: background-color 1s ease;
+    border-radius: 10px;
+}
+
+.NameCard:hover{
+  background-color: rgb(66, 64, 64);
+
+}
   
   .pic img {
     width: 50px;
